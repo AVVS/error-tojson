@@ -8,5 +8,6 @@ Object.defineProperty(Error.prototype, 'toJSON', {
 
         return alt;
     },
-    configurable: true
+    configurable: true,
+    writable: true
 });

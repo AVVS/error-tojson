@@ -1,4 +1,7 @@
-if (!('toJSON' in Error.prototype))
+if ('toJSON' in Error.prototype) {
+  return;
+}
+
 Object.defineProperty(Error.prototype, 'toJSON', {
     value: function () {
         var alt = {};

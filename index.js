@@ -6,7 +6,7 @@ Object.defineProperty(Error.prototype, 'toJSON', {
     value: function () {
         var alt = {};
 
-        Object.getOwnPropertyNames(this).forEach(function (key) {
+        Object.keys(this).forEach(function (key) {
             alt[key] = this[key];
         }, this);
 

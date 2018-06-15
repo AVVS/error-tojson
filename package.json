@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/AVVS/error-tojson/issues"
   },
-  "homepage": "https://github.com/AVVS/error-tojson"
+  "homepage": "https://github.com/AVVS/error-tojson",
+  "dependencies": {
+    "fclone": "^1.0.11"
+  }
 }
